@@ -1,0 +1,44 @@
+.CVlink{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: block;
+    background: #4CAF50;
+    padding: 8px;
+    color: white;
+}
+.carousel-content{
+    min-height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.carousel-content-off{
+    display: none;
+}
+.carousel-content-on, .carousel-content-on-left{
+    display: flex;
+}
+.carousel-menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: 20%;
+}
+.link-list{
+    display: flex;
+    margin-top: 10px;
+}
+.link-list i{
+    margin-right: 6px;
+}
+.link-list a{
+    margin-right: 6px;
+}
+.mdl-chip__contact i{
+    margin-top: 4px;
+    margin-right: 1px;
+}

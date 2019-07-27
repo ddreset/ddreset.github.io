@@ -1,0 +1,85 @@
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 26px;
+    padding: 10px 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #607D8B;
+    box-shadow: 1px 1px 6px #607D8B;
+    background: #fff;
+}
+header strong, header strong a {
+    font-size: 18px;
+}
+header a {
+    font-size: 16px;
+    color: #000;
+}
+
+header ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 80px auto;
+}
+
+.page_title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.date{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+pre.highlight {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.highlight {
+    border-radius: 7px;
+}
+
+.highlighter-rouge {
+    max-width: 100%;
+}
+
+.post-list li{
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #eef8fd;
+    box-shadow: 1px 1px 6px #607D8B;
+}
+
+.post-li li h3 {
+    overflow: hidden;  
+    white-space: nowrap;  
+    text-overflow: ellipsis;  
+}
+
+.post-list .conetnt-preview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
