@@ -1,51 +1,28 @@
-header {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 26px;
-    padding: 10px 40px;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #607D8B;
-    box-shadow: 1px 1px 6px #607D8B;
-    background: #fff;
-}
-header strong, header strong a {
-    font-size: 18px;
-}
-header a {
-    font-size: 16px;
-    color: #000;
-}
-
-header ul {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
+    color: #000;
 }
-
+ul {
+    list-style: none;
+}
 .content {
     display: flex;
     flex-direction: column;
     width: 70%;
-    margin: 80px auto;
+    margin: 30px auto;
 }
 
 .page_title {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.date{
+.page_subtitle{
     font-size: 16px;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 pre.highlight {

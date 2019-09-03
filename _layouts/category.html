@@ -3,15 +3,15 @@ layout: default
 ---
 <div class="content post-list">
     <ul>
-      {% for post in site.posts %}
+        {% for post in page.posts %}
         <li>
-          <a href="{{ post.url }}">
+            <a href="{{ post.url }}">
             <h3>{{ post.title }}</h3>
             <p>{{ post.date | date: "%Y-%m-%d" }}</p>
             <p>category: {{post.categories[0]}}</p>
             <p class="conetnt-preview">{{ post.intro }}</p>
-          </a>
+            </a>
         </li>
-      {% endfor %}
+        {% endfor %}
     </ul>
 </div>

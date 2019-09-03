@@ -25,6 +25,7 @@ github_username:  ddreset
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll-category-pages
 # highlighter: pygments
 highlighter: rouge
 
@@ -39,3 +40,6 @@ highlighter: rouge
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# configure jekyll-category-pages
+category_layout: category.html

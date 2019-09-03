@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>{{ page.title }}</title>
-        {% include head.html %}
-        <link rel="stylesheet" href="/assets/css/post.css">
-    </head>
-        
-    <body>
-        {% include header.html %}
+---
+layout: default
+---
 
-        <div class="content">
-            <div class="page_title">{{page.title}}</div>
-            <div class="date">{{page.date | date: "%Y-%m-%d"}}</div>
-            {{content}}
-        </div>
-        
-    </body>
-</html>
+<div class="content">
+    <div class="page_title">{{page.title}}</div>
+    <div class="page_subtitle">{{page.date | date: "%Y-%m-%d"}}</div>
+    <div class="page_subtitle">category: {{page.categories[0]}}</div>
+    {{content}}
+</div>
