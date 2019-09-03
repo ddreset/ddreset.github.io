@@ -6,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             {% for category in site.categories %}
-            <a class="nav-item nav-link" href="/category/{{category[0]}}">{{category[0]}}</a>
+            <a class="nav-item nav-link" href="/category/{{category[0] | slugify}}">{{category[0]}}</a>
             {% endfor %}            
             <a class="nav-item nav-link" href="/aboutme/index.html">About Me</a>
         </div>
