@@ -40,11 +40,10 @@ pre.highlight {
 }
 
 .post-list li{
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 10px;
     margin-bottom: 10px;
-    background: #eef8fd;
-    box-shadow: 1px 1px 6px #607D8B;
+    box-shadow: 1px 1px 6px #BECDD5;
 }
 
 .post-li li h3 {
