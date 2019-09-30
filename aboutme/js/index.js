@@ -7,6 +7,7 @@ carousel.style.width = carouselWidth + "%";
 carousel.style.left = carouselLeft + "%";
 var carouselSlider = document.getElementById("carousel-slider");
 carouselSlider.max = carouselContent_len - 1;
+carouselSlider.value = carouselSlider.max
 
 function moveCarouselContent(mainCard_num) { //from left to right, 0 to len-1
     var newCarouselLeft = -80 * mainCard_num + 10;
@@ -30,12 +31,12 @@ function showCard(node) {
     var nodeArr = Array.from(carouselContent);
     var index = nodeArr.indexOf(node);
     moveCarouselContent(index);
-    carouselSlider.MaterialSlider.change(carouselContent_len - 1 - index);
+    carouselSlider.MaterialSlider.change(index);
 }
 
 function sliderChange(e) {
     var value = e.value;
-    moveCarouselContent(carouselContent_len - 1 - value);
+    moveCarouselContent(value);
 }
 
 document.getElementById("getStarted").onclick = function(event) {
