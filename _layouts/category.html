@@ -5,17 +5,16 @@ layout: default
     <ul>
         {% for c in site.categories %}
         {% if page.category == c[0]%}
+        {% for post in c[1]%}
         <li>
-            {% for post in c[1]%}
             <a href="{{ post.url }}">
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.date | date: "%Y-%m-%d" }}</p>
-            <p>category: {{post.categories[0]}}</p>
-            <p class="conetnt-preview">{{ post.intro }}</p>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.date | date: "%Y-%m-%d" }}</p>
+                <p>category: {{post.categories[0]}}</p>
+                <p class="conetnt-preview">{{ post.intro }}</p>
             </a>
-            {% endfor %}
         </li>
-        
+        {% endfor %}
         {% endif %}
         {% endfor %}
     </ul>

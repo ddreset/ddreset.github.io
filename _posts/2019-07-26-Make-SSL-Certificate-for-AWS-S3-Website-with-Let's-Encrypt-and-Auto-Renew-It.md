@@ -2,7 +2,8 @@
 layout: post
 title:  "Make SSL Certificate for AWS S3 Website with Let's Encrypt and Auto Renew It"
 date:   2019-07-26 21:17:00 +0300
-categories: [Administration]
+categories: [SoftwareDev]
+tags: [Administration] 
 intro: This tutorial is for people who are not familiar with AWS and how SSL certificates work. 
 ---
 This tutorial is for people who are not familiar with AWS and how SSL certificates work. 
