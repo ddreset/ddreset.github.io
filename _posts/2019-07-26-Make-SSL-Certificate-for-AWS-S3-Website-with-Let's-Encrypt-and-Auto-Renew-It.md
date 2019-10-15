@@ -126,7 +126,7 @@ Write below content into it:
     #!/bin/bash
     # renew ssl certificate for frontend projects on aws
     # this renewal needs to be done before certificate expires otherwise this will not work!
-    certbot/certbot-auto certonly -d examplecom -d www.example.com --force-renewal --preferred-challenges=http --manual-auth-hook /home/ubuntu/authenticator.sh --manual-cleanup-hook /home/ubuntu/cleanup.sh
+    certbot/certbot-auto certonly --manual -d examplecom -d www.example.com --force-renewal --preferred-challenges=http --manual-auth-hook /home/ubuntu/authenticator.sh --manual-cleanup-hook /home/ubuntu/cleanup.sh
 
     # AWS Config - recommend using IAM specific user/group with limited permissions!
     # could also be configured by aws configure
@@ -155,8 +155,6 @@ Let’s write them:
     #!/bin/bash
     if [ ! -z "$CERTBOT_VALIDATION" ]
         then
-         export AWS_ACCESS_KEY_ID=
-         export AWS_SECRET_ACCESS_KEY=
          # make validation file
          echo $CERTBOT_VALIDATION > ~/$CERTBOT_TOKEN
          # upload validation file to S3
