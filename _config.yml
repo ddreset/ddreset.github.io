@@ -16,7 +16,7 @@
 title: DDRESET BLOG
 email: zhangyd96@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Learning notes and some thoughts.
+  ddreset blog - Learning notes and some thoughts.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ddreset.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
@@ -25,6 +25,7 @@ github_username:  ddreset
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll-sitemap
 # highlighter: pygments
 highlighter: rouge
 
