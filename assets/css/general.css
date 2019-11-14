@@ -5,11 +5,24 @@ a {
 ul {
     list-style: none;
 }
+
+img{
+    max-height: 15rem;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin: 30px auto;
+}
+
+.sub-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .page_title {
@@ -58,4 +71,12 @@ pre.highlight {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 60px solid #424141;
 }
