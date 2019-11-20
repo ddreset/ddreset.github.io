@@ -91,5 +91,5 @@ This is a test:
 ## Conclusion
 Unet works wel, but I can still use validation set and data augmentation to improve the results.
 
-## Others
-This does not directly predict coordinates which left me a question:"How should I crop the mosaic picture based on this?" I tried to use coordinates as Y, instead of bouding boxes. But the result was awful. 
+## Crop Image
+This model only draws bounding boxes. So to crop it, I have to write some extra codes:[crop_mosaic.py](https://github.com/ddreset/whoisit/blob/master/tasks/crop_mosaic.py)
