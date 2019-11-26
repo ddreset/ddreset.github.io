@@ -92,4 +92,4 @@ This is a test:
 Unet works wel, but I can still use validation set and data augmentation to improve the results.
 
 ## Crop Image
-This model only draws bounding boxes. So to crop it, I have to write some extra codes:[crop_mosaic.py](https://github.com/ddreset/whoisit/blob/master/tasks/crop_mosaic.py)
+This model only draws bounding boxes. So to crop it, I have to write some extra codes:[crop_mosaic.py](https://github.com/ddreset/whoisit/blob/master/crop_mosaic.py)
